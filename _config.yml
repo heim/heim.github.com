@@ -10,7 +10,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title: heim.blog
-tagline: andreas heim
+tagline: ruby, java, mongo, puppet, unix, vim
 author:
   name: Andreas Heim
   email: andreas@heim.no
@@ -73,7 +73,7 @@ JB:
   archive_path: /archive.html
   categories_path: /categories.html
   tags_path: /tags.html
-
+  talks_path: /talks.html
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.
   # Set 'provider' to false to turn commenting off globally.
