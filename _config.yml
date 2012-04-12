@@ -16,6 +16,7 @@ author:
   email: andreas@heim.no
   github: heim
   twitter: heim
+  pinboard: heim
   #feedburner: feedname
 
 # The production_url is only used when full-domain names are needed
@@ -73,6 +74,7 @@ JB:
   archive_path: /archive.html
   categories_path: /categories.html
   tags_path: /tags.html
+  pages_path: /pages.html
   talks_path: /talks.html
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.
