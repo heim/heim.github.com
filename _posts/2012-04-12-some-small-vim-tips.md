@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Some small VIM tips"
-description: "Some small vim tips for beginners"
+description: "The one where I share three useful VIM-tips for beginners"
+location: Oslo, Norway
 category: VIM
 tags: ["tips"]
 ---
