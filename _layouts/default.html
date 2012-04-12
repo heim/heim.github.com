@@ -1,8 +1,6 @@
-<html>
-  <head><title>Hello</title></head>
-  <body>
-    https://github.com/mojombo/mojombo.github.com 
-    {{ content }}
-
-  </body>
-</html>
+---
+theme :
+  name : tom
+---
+{% include JB/setup %}
+{% include themes/tom/default.html %}
