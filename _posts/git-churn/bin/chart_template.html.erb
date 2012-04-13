@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Git churn</title>
+
+
+    <script type="text/javascript" src="RGraph.common.core.js" ></script>
+    <script type="text/javascript" src="RGraph.bar.js" ></script>
+
+  </head>
+
+  <body>
+
+    <h1>Git churn for files</h1>
+
+    <canvas id="myBar" width="1000" height="250">[No canvas support]</canvas>
+
+    <script>
+      window.onload = function ()
+      {
+        var bar = new RGraph.Bar('myBar', [<%= values.map(&:to_s).join(", ") %>]);
+        bar.Set('chart.gutter.left', 35);
+        bar.Set('chart.colors', ['red']);
+        bar.Set('chart.title', 'A basic chart');
+        bar.Set('chart.text.angle', 90);
+        bar.Set('chart.gutter.bottom', 300);
+        bar.Set('chart.labels', [<%= labels.map {|v| "\"#{v.to_s}\""}.join(", ") %>]);
+        bar.Draw();
+      }
+    </script>
+
+
+  </body>
+</html>

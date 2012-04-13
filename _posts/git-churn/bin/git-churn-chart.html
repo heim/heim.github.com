@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Git churn</title>
+
+
+    <script type="text/javascript" src="RGraph.common.core.js" ></script>
+    <script type="text/javascript" src="RGraph.bar.js" ></script>
+
+  </head>
+
+  <body>
+
+    <h1>Git churn for files</h1>
+
+    <canvas id="myBar" width="1000" height="250">[No canvas support]</canvas>
+
+    <script>
+      window.onload = function ()
+      {
+        var bar = new RGraph.Bar('myBar', [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 4, 5, 7]);
+        bar.Set('chart.gutter.left', 35);
+        bar.Set('chart.colors', ['red']);
+        bar.Set('chart.title', 'A basic chart');
+        bar.Set('chart.text.angle', 90);
+        bar.Set('chart.gutter.bottom', 300);
+        bar.Set('chart.labels', [".gitignore", ".rbenv-version", "404.html", "Gemfile", "Gemfile.lock", "README", "_includes/.gitkeep", "_includes/JB/analytics", "_includes/JB/analytics-providers/getclicky", "_includes/JB/analytics-providers/google", "_includes/JB/analytics-providers/mixpanel", "_includes/JB/categories_list", "_includes/JB/comments", "_includes/JB/comments-providers/disqus", "_includes/JB/comments-providers/facebook", "_includes/JB/comments-providers/intensedebate", "_includes/JB/comments-providers/livefyre", "_includes/JB/liquid_raw", "_includes/JB/pages_list", "_includes/JB/posts_collate", "_includes/JB/setup", "_includes/JB/sharing", "_includes/JB/tags_list", "tags.html", "_includes/themes/heim/post.html", "_plugins/.gitkeep", "_plugins/debug.rb", "_posts/.gitkeep", "_posts/2012-04-13-getting-started-with-vim-and-ctags.md", "_posts/how_does_diqus_work/disqus.js", "_posts/how_does_diqus_work/post.md", "_posts/how_does_diqus_work/tags", "archive.html", "assets/themes/heim/css/syntax.css", "assets/themes/heim/images/rss.png", "assets/themes/tom/css/screen.css", "assets/themes/tom/css/syntax.css", "assets/themes/tom/images/rss.png", "atom.xml", "attachments/heim-buypass.pdf", "attachments/heim-tgtbatu.pdf", "attachments/heim-vaaydeffap.pdf", "categories.html", "heim-tgtbatu.pdf", "heim-vaaydeffap.pdf", "images/.gitkeep", "javascripts/.gitkeep", "old_site/README", "old_site/heim-buypass.pdf", "old_site/heim-tgtbatu.pdf", "old_site/heim-vaaydeffap.pdf", "old_site/index.html", "old_site/screen.css", "pages.html", "screen.css", "sitemap.txt", "_includes/themes/heim/page.html", "Rakefile", "_drafts/how_does_diqus_work/disqus.js", "_drafts/how_does_diqus_work/post.md", "_drafts/how_does_diqus_work/tags", "_includes/themes/heim/settings.yml", "_includes/themes/tom/page.html", "_includes/themes/tom/post.html", "_includes/themes/tom/settings.yml", "_includes/themes/twitter/default.html", "_includes/themes/twitter/page.html", "_includes/themes/twitter/post.html", "_includes/themes/twitter/settings.yml", "_layouts/page.html", "_layouts/post.html", "_posts/2012-04-04-puppet_module_for_managing_vim_files.md", "_posts/2012-04-14-displaying-time-since-last-git-commit-in-the-prompt.md", "_site/2012/04/04/puppet_module_for_managing_vim_files.html", "_site/README.md", "index.md", "assets/themes/heim/css/screen.css", "assets/themes/twitter/bootstrap/css/bootstrap.min.css", "assets/themes/twitter/bootstrap/img/glyphicons-halflings-white.png", "assets/themes/twitter/bootstrap/img/glyphicons-halflings.png", "assets/themes/twitter/css/style.css", "heim-buypass.pdf", "_site/index.html", "CNAME", "README.md", "_drafts/2012-04-14-displaying-time-since-last-git-commit-in-the-prompt.md", "_includes/themes/heim/default.html", "_includes/themes/tom/default.html", "talks.html", "_posts/2012-04-12-some-small-vim-tips.md", "_layouts/default.html", "_config.yml", "index.html"]);
+        bar.Draw();
+      }
+    </script>
+
+
+  </body>
+</html>
