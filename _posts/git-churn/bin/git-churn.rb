@@ -12,8 +12,8 @@ sorted_hash.each do |pair|
   times_altered << pair[1]
 
 end
-values = times_altered
-labels = filenames
+values = times_altered.reverse[0..19].reverse
+labels = filenames.reverse[0..19].reverse
 template = ERB.new(File.read("chart_template.html.erb"))
 
 outputFile = File.new("git-churn-chart.html",File::CREAT|File::TRUNC|File::RDWR)
