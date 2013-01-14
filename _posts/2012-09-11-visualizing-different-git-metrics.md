@@ -51,7 +51,7 @@ This term I think was coined by Corey Haines, and is a number that indicates how
 {% highlight bash %}
 #!/bin/bash
 git log --all -M -C --name-only --format='format:' "$@" | 
-sort | grep -v '^$' | uniq -c | sort | tail -n 5 
+sort -n | grep -v '^$' | uniq -c | sort | tail -n 5 
 {% endhighlight %}
 
 
@@ -71,3 +71,4 @@ done
 
 You can also check out these scripts and the presentation (in norwegian) at my <a href="http://github.com/heim/jz12-visualisering-av-kildekode">github page</a>.
 
+Edit 14. Jan. 2013: Added sort -n as mentioned in the comments.
